@@ -14,6 +14,7 @@ const descriptions = {
   Food: "New flavours & shared tables",
   Sports: "Move more, meet more",
   Kids: "Little people, big adventures",
+  Gym: "Get fit, have fun, and stay healthy",
 };
 export function Preferences() {
   const { data, loading, error, retry } = useApi<{ categories: Category[] }>("/favourites");

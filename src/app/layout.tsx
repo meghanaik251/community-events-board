@@ -4,7 +4,7 @@ import { Footer, Header } from "@/components/shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Around — Community Events Board", template: "%s | Around" },
+  title: { default: "EventSphere — Community Events Board", template: "%s | Around" },
   description:
     "Find local music, workshops, food, sports, and family events. Your next good memory is closer than you think.",
 };
