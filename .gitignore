@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+data/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+history.bundle
+*.zip
+.env.local
