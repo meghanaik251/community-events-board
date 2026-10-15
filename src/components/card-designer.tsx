@@ -19,9 +19,11 @@ export function CardDesigner({ event }: { event: CommunityEvent }) {
   const [saveError, setSaveError] = useState("");
   const version = useRef(0);
   const queue = useRef(Promise.resolve());
+
   useEffect(() => {
     if (data) setDesign(data.design);
   }, [data]);
+  
   function change(next: CardDesign) {
     setDesign(next);
     if (!user) return;
@@ -62,7 +64,7 @@ export function CardDesigner({ event }: { event: CommunityEvent }) {
           <div className="designer-preview-wrap">
             <div className={`designer-preview theme-${design.theme}`} data-testid="card-preview">
               <div className="preview-top">
-                <span className="preview-brand">around.</span>
+                <span className="preview-brand">EventSphere</span>
                 <span>YOU’RE INVITED</span>
               </div>
               <span className="preview-category">
